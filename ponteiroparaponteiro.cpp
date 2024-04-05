@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-	int c, valor = 10;
+    int c, valor = 10;
     int *p;
     int **r;
     
