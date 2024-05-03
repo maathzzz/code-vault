@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <windows.h>
+#include <conio.h>
 
 
 struct no {
@@ -27,7 +28,7 @@ void empilha(int pvalor){
 	system("cls");
 }
 
-void mostrar){
+void mostrar(){
 	no *aux = topo;
 	while(aux != NULL){
 		printf("\n %d", aux->valor);
@@ -59,7 +60,7 @@ int menu() {
 	
 	switch(op){
 		case 1:
-			printf("Digite o valor a ser inserido") 
+			printf("Digite o valor a ser inserido"); 
 			scanf("%d", &valordigitado);
 			empilha(valordigitado);
 			break;
