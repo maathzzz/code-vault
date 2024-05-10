@@ -1,4 +1,3 @@
- //Fila Com Alocação Dinamica
 #include <stdlib.h>
 #include <conio.h>
 #include <stdio.h>
@@ -18,7 +17,7 @@ void insere(int valor) {
 	aux = new(struct no);
 	aux->dado = valor;
 
-	if(tamanho==0) { //caso seja o primeiro elemento faz com que os ponteiros inicio e fim apontem para ele
+	if(tamanho==0) { 
 		inicio = aux;
 		fim_fila = aux;
 	}
@@ -62,12 +61,12 @@ void remover() {
 }
 
 void menu() {
-	printf("\n#               MENU - FILA            #");
-	printf("\n#	 1 = Inserir elemento                #");
-	printf("\n#	 2 = Remover elemento                #");
-	printf("\n#	 3 = Exibir fila                     #");
-	printf("\n#	 4 = Mostrar primeiro elemento       #");
-	printf("\n#	 5 = Sair                            #");
+	printf(" FILA Dinamica em C \n");
+	printf("1 - Inserir elemento \n");
+	printf("2 - Remover elemento \n");
+	printf("3 - Exibir fila \n");
+	printf("4 - Mostrar primeiro elemento \n");
+	printf("5 - Sair \n");
 
 	printf("\n\n");
 }
