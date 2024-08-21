@@ -1,1 +1,1 @@
-init readme
+random code snippets
