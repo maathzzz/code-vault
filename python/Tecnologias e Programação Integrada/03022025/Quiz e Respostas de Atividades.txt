@@ -1,0 +1,37 @@
+Quiz
+
+O que é Python e para que ele é utilizado?
+b) Uma linguagem interpretada, amplamente utilizada em diversas áreas, como desenvolvimento web e ciência de dados.
+
+Qual das opções abaixo representa um comando válido em Python?
+c) print("Olá, mundo!")
+
+Como declaramos uma variável em Python?
+c) nome = "João"
+
+O que acontece se tentarmos executar print(Olá, mundo!) sem aspas?
+b) O código gera um erro, pois as aspas são obrigatórias para strings.
+
+Qual dos seguintes tipos de dados não existe no Python?
+c) real
+
+
+2️⃣ Atividades de Reflexão e Pesquisa
+
+Questão 1: Uma linguagem interpretada é executada linha por linha por um interpretador.
+Questão 2: Vantagens do Python incluem sintaxe simples, bibliotecas extensas e uma comunidade ativa.
+Questão 3: Somar um inteiro e uma string causa TypeError. Exemplo: 5 + "10" gera erro.
+Questão 4: Python é amplamente utilizado em desenvolvimento web, ciência de dados e IA.
+
+4️⃣ Gamificação - Corrigindo Código com Erros
+
+O erro no código está na forma como a string está sendo formatada dentro da função print(). A variável nome não está sendo referenciada corretamente. Para corrigir isso, você pode usar f-strings (disponível a partir do Python 3.6) ou concatenar a string. Seguem duas opções de correção:
+
+fstrings
+nome = input("Digite seu nome: ")  
+print(f"O seu nome é {nome}")
+
+
+concatenação de strings
+nome = input("Digite seu nome: ")  
+print("O seu nome é " + nome)
