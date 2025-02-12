@@ -1,0 +1,134 @@
+# ============================================================
+# Quiz!
+# ============================================================
+
+num_alunos = int(input("Digite a quantidade de alunos: "))
+
+for aluno in range(num_alunos):
+  media = float(input("Digite a média do aluno: "))
+  freq = float(input("Digite a frequência do aluno: "))
+
+  if (freq >= 75 ):
+    if (media >= 5) and (media < 7):
+      print("Aluno em exame")
+    else: 
+      if(media >=7):
+        print("Aluno aprovado")
+      else :
+        print("Aluno reprovado")
+  else: 
+    print("Aluno reprovado")
+
+# ============================================================
+
+# 1) Elabore um algoritmo que calcule a média de um aluno, considerando como é feito a cálculo no UNISAGRADO. 
+Para estar aprovado a média deverá ser maior ou igual a 7 e a frequência maior ou igual a 75%. 
+Indique se o aluno está aprovado, de exame ou reprovado.
+
+media = float(input("Digite a média do aluno: "))
+freq = float(input("Digite a frequência do aluno: "))
+
+if (freq >= 75 ):
+  if (media >= 5) and (media < 7):
+    print("Aluno em exame")
+  else: 
+    if(media >=7):
+      print("Aluno aprovado")
+    else :
+      print("Aluno reprovado")
+else: 
+  print("Aluno reprovado")
+
+# ============================================================
+# 2) Elabore um algoritmo que leia dois valores inteiros e determine qual é o maior entre eles. Considere também a
+possibilidade de números iguais.
+
+num1 = int(input("Digite o primeiro número:"))
+num2 = int(input("Digite o primeiro número:"))
+
+if(num1 == num2):
+  print("Ambos os números são iguais.")
+elif(num1 > num2):
+  print("O primeiro número '{0}' é maior que o segundo número '{1}'.".format(num1, num2))
+else:
+  print("O segundo número '{0}' é o maior que o primeiro número '{1}'.".format(num2, num1))
+
+# ============================================================
+# 3) Elabore um algoritmo que leia um número inteiro e imprima uma mensagem dizendo se ele é ou não é
+múltiplo de 5.
+
+num = int(input("Digite um número para saber se ele é múltiplo de 5: "))
+
+if (num % 5 == 0):
+  print("O número {0} é multiplo de 5.".format(num))
+else:
+  print("O número {0} não é multiplo de 5.".format(num))
+
+# ============================================================
+# 4) Elabore um algoritmo que leia um número inteiro e determine se ele é par ou ímpar.
+
+num = int(input("Digite um número para saber se ele é par ou ímpar."))
+
+if (num % 2 == 0):
+  print("O número {0} é par".format(num))
+else:
+  print("O número {0} é ímpar.".format(num))
+
+# ============================================================
+# 5) Um time de basquete está fazendo uma peneira para selecionar alguns jogadores. Para ser aceito no time o
+jogador deverá ter mais que 15 anos e ter altura acima de 1.80m. Escreva este algoritmo.
+
+alt = float(input("Digite a altura do jogador(a) em centímetros."))
+idade = int(input("Digite a idade do jogador(a)."))
+
+if (idade >= 15):
+  if (alt >= 180):
+    print("O jogador está aprovado.")
+  else:
+    print("O jogador está reprovado.")
+else:
+  print("O jogador está reprovado.")
+
+# ============================================================
+# Estruturas de repetição 
+# ============================================================
+
+# While
+
+count = 0
+while count <= 10:
+  count = count+1
+  print("Estudando programação")
+  
+&
+
+count = 0
+while (count != 10):
+  count = count+1
+  print("Estudando programação")
+
+# ============================================================
+
+# For
+
+for i in range(1, 11):
+  print("Estudando programação")
+  
+&
+
+# Imprimindo somente os ímpares.
+for x in range(1,20,2):
+  print(x)
+  
+# ============================================================
+  
+soma = 0
+salario = 0
+
+while (salario >= 0):
+  salario = float(input("Digite o valor do salário ou um valor negativo para finalizar."))
+
+  if (salario > 0):
+    soma = soma + salario
+    print("A soma dos salários é: ", soma)
+print("A soma dos salários foi: ", soma)

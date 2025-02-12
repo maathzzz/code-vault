@@ -1,0 +1,58 @@
+import math
+
+print("Dentro de um quadrado amarelo, há um circulo branco.")
+
+ladoQ = float(input("Digite o lado do quadrado: "))
+raioC = float(input("Digite o raio do circulo: "))
+
+
+areaQ = ladoQ ** 2
+areaC = math.pi * (raioC ** 2)
+areaA = areaQ - areaC
+
+if areaC >= areaQ:
+	print("O valor da área amarela é 0.")
+else:
+	print("O valor da área amarela é: ", areaA)
+
+#---------------------------------------------------------------------
+
+p1 = float(input("Digite a nota da prova 1: "))
+p2 = float(input("Digite a nota da prova 2: "))
+quiz = float(input("Digite a nota quiz do aluno: "))
+outros = float(input("Digite a soma da nota de outros trabalhos do aluno: "))
+
+media = (p1 * 0.3) + (p2 * 0.03) + (quiz * 0.2 * outros * 0.2)
+
+print("A média final do aluno é: ", media)
+
+#---------------------------------------------------------------------
+
+numTabuada = float(input("Digite o número que gostaria de saber a tabuada: "))
+
+for count in range(10):
+  print("%d * %d = %d" % (numTabuada, count+1, numTabuada*(count+1)))
+
+#---------------------------------------------------------------------
+
+numTabuada = float(input("Digite o número que gostaria de saber a tabuada: "))
+
+print(numTabuada, "x 1 =", numTabuada * 1)
+print(numTabuada, "x 2 =", numTabuada * 2)
+print(numTabuada, "x 3 =", numTabuada * 3)
+print(numTabuada, "x 4 =", numTabuada * 4)
+print(numTabuada, "x 5 =", numTabuada * 5)
+print(numTabuada, "x 6 =", numTabuada * 6)
+print(numTabuada, "x 7 =", numTabuada * 7)
+print(numTabuada, "x 8 =", numTabuada * 8)
+print(numTabuada, "x 9 =", numTabuada * 9)
+print(numTabuada, "x 10 =", numTabuada * 10)
+
+#---------------------------------------------------------------------
+
+hr = float(input("Digite a hora: "))
+min = float(input("Digite os minutos: "))
+
+total = (hr * 60) + min
+
+print("A quantidade total é de {0} minutos".format(total))

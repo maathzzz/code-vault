@@ -1,0 +1,73 @@
+# ============================================================
+# Comparando elementos em um vetor
+# ============================================================
+
+points = []
+quant = int(input("Quantos números serão inseridos?"))
+
+for i in range(0, quant):
+    num = int(input("Digite um número: "))
+    points.append(num)
+
+bigger = points[0]
+for i in range(len(points)):
+    if points[i] > bigger:
+        bigger = points[i]
+        
+print('O vetor é', points)
+print('O maior número do vetor é:', bigger)
+
+# ============================================================
+# Soma de vetores simplificada
+# ============================================================
+
+list1 = [20, 11, 30, 40, 66]
+list2 = [89, 100, 4, 26, 99]
+
+sum = sum(list1) + sum(list2)
+print("A soma dos elementos do vetor {0} e do vetor {1} é {2}".format(list1, list2, sum))
+
+
+# ============================================================
+# Produto Escalar
+# ============================================================
+
+list1 = [20, 11, 30, 40, 66, 22, 77, 29, 99, 10]
+list2 = [89, 100, 4, 26, 99, 21, 33, 44, 87, 22]
+PE = []
+
+for i in range(10):
+    multiplication = list1[i] * list2[i]
+    PE.append(multiplication)
+    i = i + 1
+    
+total = sum(PE)
+print("O produto escalar é", total)
+
+# ============================================================
+# Verificando se um valor existe
+# ============================================================
+
+vetor = [20, 11, 30, 40, 66, 22, 77, 29, 99, 10]
+num = int(input("Digite um valor para saber se ele existe: "))
+
+for i in range(10):
+    if num == vetor[i]:
+        print("existe")
+
+# ============================================================
+# Verificando se o valor é par ou ímpar
+# ============================================================
+
+vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+impares = []
+pares = []
+
+for i in range(len(vetor)):
+    if vetor[i] % 2 == 0:
+        pares.append(vetor[i])
+    else:
+        impares.append(vetor[i])
+        
+print(impares)
+print(pares)
